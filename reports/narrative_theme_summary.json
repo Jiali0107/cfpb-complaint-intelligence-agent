@@ -1,0 +1,75 @@
+{
+  "generated_at_utc": "2026-09-21T07:53:02.661429+00:00",
+  "method": "TF-IDF + non-negative matrix factorization",
+  "scope": "Topics are descriptive clusters, not ground-truth complaint causes.",
+  "source_narratives": 261447,
+  "unique_narrative_training_pool": 140767,
+  "training_documents": 30000,
+  "training_selection": "deterministic product-balanced sample of exact-text-unique narratives",
+  "topic_count": 12,
+  "seed": 42,
+  "max_features": 20000,
+  "topics": [
+    {
+      "topic_id": 1,
+      "topic_label": "credit / report / credit report / information / reporting / debt",
+      "narrative_count": 107704
+    },
+    {
+      "topic_id": 8,
+      "topic_label": "payment / account / told / loan / card / bank",
+      "narrative_count": 42451
+    },
+    {
+      "topic_id": 0,
+      "topic_label": "cash app / cash / app / unfair / resolution / unprotected",
+      "narrative_count": 26314
+    },
+    {
+      "topic_id": 10,
+      "topic_label": "theft / identity theft / identity / block / information / breach",
+      "narrative_count": 22957
+    },
+    {
+      "topic_id": 7,
+      "topic_label": "consumer reporting / reporting agency / agency / section states / section / consumer",
+      "narrative_count": 14964
+    },
+    {
+      "topic_id": 2,
+      "topic_label": "zelle / concerns / issues platform / zelle failed / significant issues / despite using",
+      "narrative_count": 14242
+    },
+    {
+      "topic_id": 6,
+      "topic_label": "hard inquiries / aforementioned / inquiries / hard / theft fraud / accounts collections",
+      "narrative_count": 8807
+    },
+    {
+      "topic_id": 5,
+      "topic_label": "experian / disputed / failing / evidence / outcomes / alleging",
+      "narrative_count": 6729
+    },
+    {
+      "topic_id": 3,
+      "topic_label": "navy / navy federal / transactions / fees / funds / federal credit",
+      "narrative_count": 6672
+    },
+    {
+      "topic_id": 4,
+      "topic_label": "investigation / disputes / equifax / practice violates / contravene / investigation disputes",
+      "narrative_count": 4806
+    },
+    {
+      "topic_id": 9,
+      "topic_label": "deposit / capital / direct deposit / funds / direct / technical",
+      "narrative_count": 4120
+    },
+    {
+      "topic_id": 11,
+      "topic_label": "students / loans / attended / graduates / defense / borrower defense",
+      "narrative_count": 1681
+    }
+  ],
+  "monthly_rows": 228
+}

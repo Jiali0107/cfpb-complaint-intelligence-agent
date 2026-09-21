@@ -1,0 +1,108 @@
+{
+  "source_name": "CFPB Consumer Complaint Database API",
+  "source_url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/",
+  "downloaded_at_utc": "2026-09-19T07:54:19.785049+00:00",
+  "query": {
+    "date_received_min": "2025-01-01",
+    "date_received_max": "2026-08-31",
+    "sort": "created_date_desc",
+    "limit": 1000,
+    "page_size": 100,
+    "sampling_strategy": "monthly"
+  },
+  "rows_downloaded": 1000,
+  "sampling_details": {
+    "strategy": "monthly",
+    "months": [
+      "2025-01",
+      "2025-02",
+      "2025-03",
+      "2025-04",
+      "2025-05",
+      "2025-06",
+      "2025-07",
+      "2025-08",
+      "2025-09",
+      "2025-10",
+      "2025-11",
+      "2025-12",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-04",
+      "2026-05",
+      "2026-06",
+      "2026-07",
+      "2026-08"
+    ],
+    "target_rows_per_month": 50,
+    "actual_rows_per_month": {
+      "2025-01": 50,
+      "2025-02": 50,
+      "2025-03": 50,
+      "2025-04": 50,
+      "2025-05": 50,
+      "2025-06": 50,
+      "2025-07": 50,
+      "2025-08": 50,
+      "2025-09": 50,
+      "2025-10": 50,
+      "2025-11": 50,
+      "2025-12": 50,
+      "2026-01": 50,
+      "2026-02": 50,
+      "2026-03": 50,
+      "2026-04": 50,
+      "2026-05": 50,
+      "2026-06": 50,
+      "2026-07": 50,
+      "2026-08": 50
+    },
+    "within_month_order": "created_date_desc"
+  },
+  "duplicate_complaint_id_rows": 0,
+  "columns_downloaded": [
+    "product",
+    "date_sent_to_company",
+    "issue",
+    "sub_product",
+    "zip_code",
+    "tags",
+    "complaint_id",
+    "timely",
+    "company_response",
+    "submitted_via",
+    "company",
+    "date_received",
+    "state",
+    "company_public_response",
+    "sub_issue"
+  ],
+  "api_meta": {
+    "license": "CC0",
+    "last_updated": "2026-09-18T12:00:00-05:00",
+    "last_indexed": "2026-09-18T12:00:00-05:00",
+    "total_record_count": 17842775,
+    "is_data_stale": false,
+    "has_data_issue": false,
+    "break_points": {
+      "2": [
+        1738367735000,
+        "11869722"
+      ],
+      "3": [
+        1738367386000,
+        "11869175"
+      ],
+      "4": [
+        1738367090000,
+        "11869350"
+      ]
+    }
+  },
+  "files": {
+    "data/raw/cfpb_complaints_sample.jsonl": "18989f88ca1257b140f89c0ada6df1728ce5c11128df313269793ec493408c49",
+    "data/processed/cfpb_complaints_sample.parquet": "9f1237c1f5c9a2068bbc2abbd5a4724475fef3df99e6f0489c0e63f3e1e715b2",
+    "data/processed/cfpb_complaints_preview.csv": "747479c61e6f3baffe0c495c4952984ae877911488219bc4c92e562fabe81a2b"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "generated_at_utc": "2026-09-21T07:51:01.322544+00:00",
+  "source_url": "https://files.consumerfinance.gov/f/documents/CCDB_Export_9_January_2025_through_February_2025.zip",
+  "source_snapshot": "CFPB CCDB Export: 9 January 2025 through February 2025",
+  "source_archive": "CCDB_Export_9_January_2025_through_February_2025.zip",
+  "source_csv": "CCDB_Export_9_January_2025_through_February_2025.csv",
+  "source_archive_sha256": "11c18bb0973eed8f5e4f66e2979346af0671a3aefcb5a6b9eec73009d53cff64",
+  "source_rows": 811019,
+  "non_empty_narrative_rows": 265405,
+  "written_rows": 261447,
+  "minimum_narrative_characters": 80,
+  "short_narratives_excluded": 3958,
+  "duplicate_complaint_ids_excluded": 0,
+  "exact_duplicate_narrative_rows_observed": 120680,
+  "secondary_redaction_rows": 19,
+  "date_received_min": "2025-01-01",
+  "date_received_max": "2025-02-28",
+  "top_products": [
+    [
+      "Credit reporting or other personal consumer reports",
+      168551
+    ],
+    [
+      "Money transfer, virtual currency, or money service",
+      45619
+    ],
+    [
+      "Checking or savings account",
+      16702
+    ],
+    [
+      "Debt collection",
+      14919
+    ],
+    [
+      "Credit card",
+      6866
+    ],
+    [
+      "Mortgage",
+      2320
+    ],
+    [
+      "Student loan",
+      2173
+    ],
+    [
+      "Vehicle loan or lease",
+      1869
+    ],
+    [
+      "Payday loan, title loan, personal loan, or advance loan",
+      1091
+    ],
+    [
+      "Prepaid card",
+      725
+    ],
+    [
+      "Debt or credit management",
+      612
+    ]
+  ],
+  "output": "data/processed/cfpb_narratives.parquet",
+  "output_sha256": "ecada6e345cf3f257c14361fe95b09b428f5c0d8f56c1c28c7bbaf987e0f32de",
+  "privacy_note": "CFPB publishes opted-in, scrubbed narratives. This pipeline applies only a conservative second scan for obvious residual identifiers; it is not a guarantee of complete de-identification."
+}

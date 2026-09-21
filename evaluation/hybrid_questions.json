@@ -1,0 +1,26 @@
+[
+  {
+    "id": "theme_sql",
+    "question": "2025年1月至2月，已发布叙事投诉中数量最多的三个NMF文本主题是什么？请说明口径限制。",
+    "expected_route": "sql",
+    "expected_tools": ["run_safe_sql"],
+    "expected_tables": ["narrative_theme_monthly"],
+    "minimum_citations": 0
+  },
+  {
+    "id": "identity_theft_examples",
+    "question": "请从本地投诉文本中找两个消费者描述身份盗用和欺诈账户的代表性案例，并逐条引用 Complaint ID。不要推断总体频率。",
+    "expected_route": "rag",
+    "expected_tools": ["search_complaint_narratives"],
+    "expected_tables": [],
+    "minimum_citations": 2
+  },
+  {
+    "id": "identity_theft_hybrid",
+    "question": "2025年1月至2月，身份盗用文本主题在已发布叙事投诉中有多少条、占比多少？再给两个相关案例并逐条引用 Complaint ID。",
+    "expected_route": "hybrid",
+    "expected_tools": ["run_safe_sql", "search_complaint_narratives"],
+    "expected_tables": ["narrative_theme_monthly"],
+    "minimum_citations": 2
+  }
+]

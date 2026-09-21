@@ -1,0 +1,32 @@
+[
+  {
+    "id": "identity_theft_credit_report",
+    "query": "identity theft created accounts that do not belong to me",
+    "product": "Credit reporting or other personal consumer reports",
+    "expected_terms": ["identity", "theft", "account"]
+  },
+  {
+    "id": "overdraft_fee",
+    "query": "unexpected overdraft fee charged by my bank",
+    "product": "Checking or savings account",
+    "expected_terms": ["overdraft", "fee"]
+  },
+  {
+    "id": "debt_not_owed",
+    "query": "a debt collector is trying to collect money I do not owe",
+    "product": "Debt collection",
+    "expected_terms": ["debt", "owe"]
+  },
+  {
+    "id": "unauthorized_card_transaction",
+    "query": "unauthorized credit card transaction and dispute",
+    "product": "Credit card",
+    "expected_terms": ["unauthorized", "transaction", "dispute"]
+  },
+  {
+    "id": "money_transfer_scam",
+    "query": "money transfer fraud or scam and funds were not returned",
+    "product": "Money transfer, virtual currency, or money service",
+    "expected_terms": ["fraud", "scam", "money", "fund"]
+  }
+]

@@ -1,0 +1,40 @@
+[project]
+name = "project-agent"
+version = "0.1.0"
+description = "A reproducible CFPB complaint analytics and data-agent system"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "duckdb>=1.5.5",
+    "httpx>=0.28.1",
+    "ipykernel>=7.3.0",
+    "joblib>=1.4.2",
+    "jupyter>=1.1.1",
+    "langgraph>=1.2.11",
+    "matplotlib>=3.11.2",
+    "nbclient>=0.11.0",
+    "nbformat>=5.11.1",
+    "openai>=3.16.2",
+    "pandas>=3.0.6",
+    "plotly>=7.1.0",
+    "pyarrow>=25.0.1",
+    "pydantic-settings>=2.15.0",
+    "pytest>=9.1.1",
+    "python-dotenv>=1.2.3",
+    "scikit-learn>=1.7.0",
+    "scipy>=1.15.0",
+    "seaborn>=0.13.2",
+    "sqlglot>=30.18.0",
+    "streamlit>=1.64.0",
+]
+
+[project.scripts]
+project-agent = "project_agent.cli:main"
+project-agent-build-db = "project_agent.database:main"
+
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

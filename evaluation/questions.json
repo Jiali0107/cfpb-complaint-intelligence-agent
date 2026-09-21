@@ -1,0 +1,38 @@
+[
+  {
+    "id": "top_months",
+    "question": "2025年1月至2026年8月，投诉量最高的三个月是哪几个？",
+    "expected_numbers": ["671,212", "660,563", "620,810"],
+    "expected_tables": ["monthly_kpis"],
+    "require_sql": true
+  },
+  {
+    "id": "weighted_timely",
+    "question": "整个数据区间的及时响应率是多少？请说明计算口径。",
+    "expected_numbers": ["99.55%"],
+    "expected_tables": ["monthly_kpis"],
+    "require_sql": true
+  },
+  {
+    "id": "relief_rate",
+    "question": "2025年全年获得金钱或非金钱救济的投诉占比是多少？",
+    "expected_numbers": [],
+    "expected_tables": ["monthly_kpis"],
+    "require_sql": true
+  },
+  {
+    "id": "top_products",
+    "question": "2026年上半年投诉量最大的五个产品类别是什么？",
+    "expected_numbers": [],
+    "expected_tables": ["monthly_dimensions"],
+    "require_sql": true
+  },
+  {
+    "id": "limitations",
+    "question": "可以根据投诉数量直接判断哪个公司服务最差吗？请用数据库证据回答。",
+    "expected_numbers": [],
+    "expected_tables": [],
+    "expected_tools": ["get_metric_catalog"],
+    "require_sql": false
+  }
+]

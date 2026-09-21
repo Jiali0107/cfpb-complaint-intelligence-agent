@@ -1,0 +1,18 @@
+{
+  "evaluated_at_utc": "2026-09-21T03:15:05.603123+00:00",
+  "model": "gpt-4.1-mini",
+  "cases": 5,
+  "scope": "Five fixed representative CFPB analytics questions; not a general accuracy claim.",
+  "tool_use_rate": 1.0,
+  "sql_success_rate": 1.0,
+  "table_coverage_rate": 1.0,
+  "tool_coverage_rate": 1.0,
+  "number_coverage_rate": 1.0,
+  "case_ids": [
+    "top_months",
+    "weighted_timely",
+    "relief_rate",
+    "top_products",
+    "limitations"
+  ]
+}

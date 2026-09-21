@@ -1,0 +1,22 @@
+{
+  "source_name": "CFPB Consumer Complaint Database API aggregations",
+  "source_url": "https://www.consumerfinance.gov/data-research/consumer-complaints/search/api/v1/",
+  "downloaded_at_utc": "2026-09-21T03:02:02.580180+00:00",
+  "date_received_min": "2025-01-01",
+  "date_received_max": "2026-08-31",
+  "months": 20,
+  "dimensions": [
+    "product",
+    "issue",
+    "company_response",
+    "submitted_via",
+    "timely",
+    "state"
+  ],
+  "method": "One exact aggregation query per complete calendar month",
+  "files": {
+    "data/raw/cfpb_monthly_aggregates.json": "21483e766c3a4aba9cf26c37cf5db9240589770a1227d838936e4abf613a32e0",
+    "data/processed/cfpb_monthly_kpis.parquet": "34632fff70e714d1dd45834283a4d9f28e7d3c4dc19844430ebccc07cabf1cec",
+    "data/processed/cfpb_monthly_dimensions.parquet": "a0924d5f36065d5c36298bb40aff1c7d282054d926f0d0b148d954aa65ab0fa7"
+  }
+}

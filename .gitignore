@@ -1,0 +1,41 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+.uv-cache/
+.cache/
+.env
+.env.*
+!.env.example
+.DS_Store
+.ipynb_checkpoints/
+
+# Keep the three small reproducibility datasets; ignore regenerated raw/warehouse files.
+data/raw/*
+data/processed/*
+data/warehouse/*
+data/vector_store/*
+!data/raw/cfpb_source_receipt.json
+!data/raw/cfpb_aggregates_receipt.json
+!data/raw/cfpb_narratives_receipt.json
+!data/processed/cfpb_complaints_sample.parquet
+!data/processed/cfpb_monthly_dimensions.parquet
+!data/processed/cfpb_monthly_kpis.parquet
+!data/warehouse/.gitkeep
+!data/vector_store/.gitkeep
+
+# Runtime traces can contain user questions and model outputs.
+logs/*
+!logs/.gitkeep
+evaluation/latest_results.json
+evaluation/latest_rag_results.json
+evaluation/latest_hybrid_results.json
+
+# Generated notebook previews.
+reports/*.html
